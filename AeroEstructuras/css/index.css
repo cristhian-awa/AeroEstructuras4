@@ -1,0 +1,239 @@
+/* ============================= */
+/* PÁGINA INICIO */
+/* ============================= */
+
+.inicio {
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(0, 20, 40, 0.55),
+            rgba(0, 20, 40, 0.55)
+        ),
+        url("../img/Nuestros inicios.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.contenido-inicio {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.contenido-inicio h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 700;
+    animation: aparecer 1s ease;
+}
+
+.contenido-inicio h1 span {
+    display: block;
+    color: #f4b400;
+}
+
+.contenido-inicio p {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    animation: aparecer 1.3s ease;
+}
+
+
+/* BOTONES DEL INICIO */
+
+.botones-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 25px;
+    clear: both;
+}
+
+.botones-inicio .boton {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #e6a400;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+    animation: aparecer 1.6s ease;
+}
+
+.botones-inicio .boton:hover {
+    background-color: #c98f00;
+}
+
+.botones-inicio .boton-secundario {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.botones-inicio .boton-secundario:hover {
+    background-color: white;
+    color: #0b1f33;
+}
+
+
+/* ============================= */
+/* FRANJA DE BENEFICIOS */
+/* ============================= */
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #ffffff;
+    padding: 35px 8%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 25px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.beneficio:last-child {
+    border-right: none;
+}
+
+.icono-beneficio {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #e6a400;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.beneficio h3 {
+    margin: 0 0 5px;
+    color: #0b1f3a;
+    font-size: 16px;
+}
+
+.beneficio p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+/* ============================= */
+/* PROYECTOS DESTACADOS */
+/* ============================= */
+
+.proyectos-destacados {
+    padding: 85px 8%;
+    background-color: #f7f8fa;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.proyecto {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.contenido-proyecto {
+    padding: 25px;
+}
+
+.contenido-proyecto h3 {
+    color: #0b1f3a;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.contenido-proyecto p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.boton-proyectos {
+    text-align: center;
+    margin-top: 45px;
+}
+
+
+/* ============================= */
+/* RESPONSIVE INICIO */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .inicio {
+        min-height: 600px;
+    }
+
+    .contenido-inicio h1 {
+        font-size: 38px;
+    }
+
+    .contenido-inicio p {
+        font-size: 17px;
+    }
+
+    .botones-inicio {
+        flex-wrap: wrap;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficio {
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+    }
+}

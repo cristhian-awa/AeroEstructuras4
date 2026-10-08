@@ -1,0 +1,442 @@
+/* ============================= */
+/* PÁGINA PROYECTOS */
+/* ============================= */
+
+
+/* HERO */
+
+.proyectos-hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    color: white;
+    background:
+        linear-gradient(
+            rgba(0, 20, 40, 0.70),
+            rgba(0, 20, 40, 0.70)
+        ),
+        url("../img/Conjunto residencial alameda.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido-proyectos-hero {
+    max-width: 750px;
+    text-align: left;
+}
+
+.etiqueta-proyectos {
+    display: block;
+    color: #f4b400;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.linea-amarilla {
+    width: 55px;
+    height: 4px;
+    background-color: #f4b400;
+    margin-bottom: 22px;
+}
+
+.contenido-proyectos-hero h1 {
+    margin: 0 0 20px;
+    font-size: 54px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.contenido-proyectos-hero h1 span {
+    display: block;
+}
+
+.contenido-proyectos-hero .texto-amarillo {
+    color: #f4b400;
+}
+
+.contenido-proyectos-hero p {
+    max-width: 680px;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* ============================= */
+/* GALERÍA */
+/* ============================= */
+
+.galeria-proyectos {
+    padding: 80px 8%;
+    background-color: #f5f5f5;
+}
+
+.galeria-proyectos .titulo-seccion {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.galeria-proyectos .titulo-seccion h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.galeria-proyectos .titulo-seccion p {
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* ============================= */
+/* FILTROS */
+/* ============================= */
+
+.filtros-proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.botones-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filtro {
+    padding: 11px 20px;
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    color: #555;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtro:hover {
+    border-color: #f4b400;
+}
+
+.filtro.activo {
+    background-color: #f4b400;
+    color: #0b2239;
+    border-color: #f4b400;
+    font-weight: bold;
+}
+
+
+/* ============================= */
+/* BUSCADOR DE PROYECTOS */
+/* ============================= */
+
+.buscador-proyectos {
+    display: flex;
+    align-items: center;
+}
+
+.buscador-proyectos input {
+    width: 220px;
+    padding: 11px 14px;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+.buscador-proyectos input:focus {
+    border-color: #f4b400;
+}
+
+.buscador-proyectos button {
+    padding: 11px 15px;
+    border: none;
+    background-color: #0b2239;
+    color: white;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.buscador-proyectos button:hover {
+    background-color: #f4b400;
+    color: #0b2239;
+}
+
+
+/* ============================= */
+/* TARJETAS */
+/* ============================= */
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-proyecto {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.imagen-proyecto {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.imagen-proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.categoria-proyecto {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #f4b400;
+    color: #0b2239;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contenido-proyecto {
+    padding: 22px;
+}
+
+.contenido-proyecto h3 {
+    color: #0b2239;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.ubicacion-proyecto {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.contenido-proyecto p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.ver-proyecto {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0b2239;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ver-proyecto:hover {
+    color: #f4b400;
+}
+
+
+/* ============================= */
+/* MODAL */
+/* ============================= */
+
+.modal-proyecto {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenido-modal {
+    position: relative;
+    width: 90%;
+    max-width: 550px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contenido-modal h2 {
+    color: #0b2239;
+    margin-bottom: 15px;
+}
+
+.contenido-modal p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #555;
+}
+
+.cerrar-modal:hover {
+    color: #f4b400;
+}
+
+
+/* ============================= */
+/* CTA FINAL */
+/* ============================= */
+
+.cta-footer {
+    width: 100%;
+    margin: 0;
+    padding: 40px 7%;
+    box-sizing: border-box;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(5, 25, 45, 0.94),
+            rgba(5, 25, 45, 0.94)
+        ),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-contenido {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cta-texto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.cta-icono {
+    font-size: 35px;
+}
+
+.cta-texto h2 {
+    margin: 0 0 5px;
+    font-size: 22px;
+}
+
+.cta-texto p {
+    margin: 0;
+    color: #e5e5e5;
+    font-size: 13px;
+}
+
+.cta-boton {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #f4b400;
+    color: #0b2239;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.cta-caracteristicas {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-caracteristica {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 18px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-caracteristica span {
+    font-size: 22px;
+}
+
+.cta-caracteristica p {
+    margin: 0;
+    max-width: 90px;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .proyectos-hero {
+        min-height: 550px;
+        padding: 50px 20px;
+    }
+
+    .contenido-proyectos-hero h1 {
+        font-size: 38px;
+    }
+
+    .contenido-proyectos-hero p {
+        font-size: 17px;
+    }
+
+    .galeria-proyectos {
+        padding: 60px 20px;
+    }
+
+    .filtros-proyectos {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buscador-proyectos input {
+        width: 100%;
+    }
+
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-contenido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta-caracteristicas {
+        flex-direction: column;
+        width: 100%;
+    }
+}

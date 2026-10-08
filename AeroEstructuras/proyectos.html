@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AeroEstructuras | Proyectos</title>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+<header class="encabezado">
+
+    <div class="logo">
+        <img src="img/logo-aeroestructuras.png" alt="Logo AeroEstructuras">
+    </div>
+
+    <nav class="menu">
+
+        <a href="index.html"
+           data-es="Inicio"
+           data-en="Home">
+            Inicio
+        </a>
+
+        <a href="nosotros.html"
+           data-es="Nosotros"
+           data-en="About Us">
+            Nosotros
+        </a>
+
+        <a href="servicios.html"
+           data-es="Servicios"
+           data-en="Services">
+            Servicios
+        </a>
+
+        <a href="proyectos.html"
+           data-es="Proyectos"
+           data-en="Projects">
+            Proyectos
+        </a>
+
+        <!-- SELECTOR DE IDIOMA -->
+        <div class="selector-idioma">
+
+            <button class="boton-idioma" id="botonIdioma">
+                🌐
+            </button>
+
+            <div class="menu-idioma" id="menuIdioma">
+
+                <button onclick="cambiarIdioma('es')">
+                    🇪🇸 Español
+                </button>
+
+                <button onclick="cambiarIdioma('en')">
+                    🇺🇸 English
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- BUSCADOR -->
+        <div class="contenedor-busqueda">
+
+    <button class="icono-menu" id="botonBuscar">
+        🔍
+    </button>
+
+    <div class="buscador" id="buscador">
+
+        <input
+            type="text"
+            id="campoBuscar"
+            placeholder="Buscar..."
+        >
+
+        <button id="btnBuscar">
+            Buscar
+        </button>
+
+       </div>
+
+       </div>
+
+        <!-- COTIZACIÓN -->
+        <a href="contacto.html"
+           class="boton-contactanos"
+           data-es="Solicita una cotización"
+           data-en="Request a Quote">
+            Solicita una cotización
+         </a>
+
+       </nav>
+
+       </header>
+
+<!-- PISO 2 - PRESENTACIÓN DE PROYECTOS -->
+<section class="proyectos-hero">
+
+    <div class="contenido-proyectos-hero">
+
+        <span
+            class="etiqueta-proyectos"
+            data-es="NUESTROS PROYECTOS"
+            data-en="OUR PROJECTS">
+            NUESTROS PROYECTOS
+        </span>
+
+        <div class="linea-amarilla"></div>
+
+        <h1>
+            <span
+                data-es="Obras que construyen"
+                data-en="Projects that build">
+                Obras que construyen
+            </span>
+
+            <span
+                class="texto-amarillo"
+                data-es="un mejor mañana"
+                data-en="a better tomorrow">
+                un mejor mañana
+            </span>
+        </h1>
+
+        <p
+            data-es="Cada proyecto refleja nuestro compromiso con la calidad, la innovación y el bienestar de las personas. Conoce algunos de nuestros proyectos más destacados."
+            data-en="Each project reflects our commitment to quality, innovation, and people's well-being. Discover some of our most outstanding projects.">
+            Cada proyecto refleja nuestro compromiso con la calidad,
+            la innovación y el bienestar de las personas. Conoce algunos
+            de nuestros proyectos más destacados.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- PISO 3 - GALERÍA DE PROYECTOS -->
+<section class="galeria-proyectos">
+
+    <div class="titulo-seccion">
+
+    <h2
+        data-es="Proyectos Destacados"
+        data-en="Featured Projects">
+        Proyectos Destacados
+    </h2>
+
+    <p
+        data-es="Explora nuestros proyectos y encuentra diferentes soluciones de construcción, diseño e infraestructura."
+        data-en="Explore our projects and discover different construction, design, and infrastructure solutions.">
+        Explora nuestros proyectos y encuentra diferentes soluciones
+        de construcción, diseño e infraestructura.
+    </p>
+
+     </div>
+
+
+    <!-- FILTROS Y BUSCADOR -->
+
+<div class="filtros-proyectos">
+
+    <div class="botones-filtro">
+
+    <button
+        class="filtro activo"
+        data-filtro="todos"
+        data-es="Todos"
+        data-en="All">
+        Todos
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="residencial"
+        data-es="Residenciales"
+        data-en="Residential">
+        Residenciales
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="comercial"
+        data-es="Comerciales"
+        data-en="Commercial">
+        Comerciales
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="infraestructura"
+        data-es="Infraestructura"
+        data-en="Infrastructure">
+        Infraestructura
+    </button>
+
+    <button
+        class="filtro"
+        data-filtro="industrial"
+        data-es="Industriales"
+        data-en="Industrial">
+        Industriales
+    </button>
+
+      </div>
+
+    <div class="buscador-proyectos">
+
+        <input
+       type="text"
+        id="buscador"
+        placeholder="Buscar proyecto..."
+        data-placeholder-es="Buscar proyecto..."
+        data-placeholder-en="Search project..."
+>
+
+        <button type="button" id="boton-buscar">
+            🔍
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- AQUÍ COLOCAREMOS LOS 9 PROYECTOS -->
+<!-- CONTENEDOR DE PROYECTOS -->
+
+<div class="contenedor-proyectos">
+
+    <!-- PROYECTO 1 -->
+    <div class="tarjeta-proyecto" data-categoria="residencial">
+
+        <div class="imagen-proyecto">
+            <img src="img/Edificio Corporativo.png"
+                 alt="Edificio Los Olivos">
+
+            <span
+          class="categoria-proyecto"
+        data-es="Residencial"
+        data-en="Residential">
+        Residencial
+        </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Edificio Los Olivos</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 Lima, Perú
+            </p>
+
+            <p>
+                Proyecto residencial de 12 pisos con áreas comunes,
+                seguridad 24/7 y acabados de primera.
+            </p>
+
+            <a
+    href="javascript:void(0)"
+    class="ver-proyecto"
+    data-es="Ver proyecto →"
+    data-en="View project →">
+    Ver proyecto →
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- PROYECTO 2 -->
+    <div class="tarjeta-proyecto" data-categoria="comercial">
+
+        <div class="imagen-proyecto">
+            <img src="img/Centro Empresarial Conecta.png"
+                 alt="Centro Empresarial Connecta">
+
+            <span
+             class="categoria-proyecto"
+            data-es="Comercial"
+            data-en="Commercial">
+           Comercial
+          </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Centro Empresarial Connecta</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 San Isidro, Lima
+            </p>
+
+            <p>
+                Moderno centro de oficinas con tecnología de punta,
+                ubicación estratégica y amplios espacios.
+            </p>
+
+            <a
+    href="javascript:void(0)"
+    class="ver-proyecto"
+    data-es="Ver proyecto →"
+    data-en="View project →">
+    Ver proyecto →
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- PROYECTO 3 -->
+    <div class="tarjeta-proyecto" data-categoria="infraestructura">
+
+        <div class="imagen-proyecto">
+            <img src="img/Puente San Rafael.png"
+                 alt="Puente San Rafael">
+
+            <span
+            class="categoria-proyecto"
+            data-es="Infraestructura"
+            data-en="Infrastructure">
+            Infraestructura
+            </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Puente San Rafael</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 Junín, Perú
+            </p>
+
+            <p>
+                Puente de 320 metros de longitud que mejora
+                la conectividad de la región y su desarrollo económico.
+            </p>
+
+            <a
+    href="javascript:void(0)"
+    class="ver-proyecto"
+    data-es="Ver proyecto →"
+    data-en="View project →">
+    Ver proyecto →
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- PROYECTO 4 -->
+    <div class="tarjeta-proyecto" data-categoria="industrial">
+
+        <div class="imagen-proyecto">
+            <img src="img/Planta Logistica del Norte.png"
+                 alt="Planta Logística Norte">
+
+            <span
+             class="categoria-proyecto"
+            data-es="Industrial"
+            data-en="Industrial">
+            Industrial
+           </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Planta Logística Norte</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 Trujillo, Perú
+            </p>
+
+            <p>
+                Centro logístico e industrial con altos estándares
+                de seguridad y eficiencia operativa.
+            </p>
+
+            <a
+            href="javascript:void(0)"
+            class="ver-proyecto"
+            data-es="Ver proyecto →"
+            data-en="View project →">
+            Ver proyecto →
+           </a>
+        </div>
+
+    </div>
+
+
+    <!-- PROYECTO 5 -->
+    <div class="tarjeta-proyecto" data-categoria="residencial">
+
+        <div class="imagen-proyecto">
+            <img src="img/Conjunto residencial alameda.png"
+                 alt="Conjunto Residencial Alameda">
+
+            <span class="categoria-proyecto">
+                Residencial
+            </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Conjunto Residencial Alameda</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 Arequipa, Perú
+            </p>
+
+            <p>
+                Viviendas modernas con áreas verdes, diseñadas
+                para una mejor calidad de vida.
+            </p>
+
+            <a
+           href="javascript:void(0)"
+             class="ver-proyecto"
+           data-es="Ver proyecto →"
+         data-en="View project →">
+           Ver proyecto →
+         </a>
+        </div>
+
+    </div>
+
+
+    <!-- PROYECTO 6 -->
+    <div class="tarjeta-proyecto" data-categoria="comercial">
+
+        <div class="imagen-proyecto">
+            <img src="img/Mall Plaza Sur.png"
+                 alt="Mall Plaza Sur">
+
+            <span class="categoria-proyecto">
+                Comercial
+            </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Mall Plaza Sur</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 Ica, Perú
+            </p>
+
+            <p>
+                Centro comercial con tiendas, restaurantes y espacios
+                de entretenimiento.
+            </p>
+
+            <a
+    href="javascript:void(0)"
+    class="ver-proyecto"
+    data-es="Ver proyecto →"
+    data-en="View project →">
+    Ver proyecto →
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- PROYECTO 7 -->
+    <div class="tarjeta-proyecto" data-categoria="infraestructura">
+
+        <div class="imagen-proyecto">
+            <img src="img/Via de evitamiento.png"
+                 alt="Vía de Evitamiento">
+
+            <span class="categoria-proyecto">
+                Infraestructura
+            </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Vía de Evitamiento</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 Lima, Perú
+            </p>
+
+            <p>
+                Ampliación y mejora de la vía para un tránsito
+                seguro y eficiente.
+            </p>
+
+            <a
+    href="javascript:void(0)"
+    class="ver-proyecto"
+    data-es="Ver proyecto →"
+    data-en="View project →">
+    Ver proyecto →
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- PROYECTO 8 -->
+    <div class="tarjeta-proyecto" data-categoria="industrial">
+
+        <div class="imagen-proyecto">
+            <img src="img/Almacen Central.png"
+                 alt="Almacén Central">
+
+            <span class="categoria-proyecto">
+                Industrial
+            </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Almacén Central</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 Chiclayo, Perú
+            </p>
+
+            <p>
+                Infraestructura industrial para el almacenamiento
+                y distribución de productos.
+            </p>
+
+            <a
+    href="javascript:void(0)"
+    class="ver-proyecto"
+    data-es="Ver proyecto →"
+    data-en="View project →">
+    Ver proyecto →
+</a>
+        </div>
+
+    </div>
+
+
+    <!-- PROYECTO 9 -->
+    <div class="tarjeta-proyecto" data-categoria="infraestructura">
+
+        <div class="imagen-proyecto">
+            <img src="https://www.node-group.co.za/sitepad-data/uploads/2026/02/INDUS-MM.jpeg"
+                 alt="Infraestructura Urbana">
+
+            <span class="categoria-proyecto">
+                Infraestructura
+            </span>
+        </div>
+
+        <div class="contenido-proyecto">
+            <h3>Infraestructura Urbana</h3>
+
+            <p class="ubicacion-proyecto">
+                📍 Lima, Perú
+            </p>
+
+            <p>
+                Desarrollo de soluciones de infraestructura orientadas
+                a mejorar la funcionalidad y el uso de los espacios.
+            </p>
+
+            <a
+    href="javascript:void(0)"
+    class="ver-proyecto"
+    data-es="Ver proyecto →"
+    data-en="View project →">
+    Ver proyecto →
+</a>
+        </div>
+    </div>
+</section>
+<!-- MODAL DE PROYECTO -->
+
+<div id="modal-proyecto" class="modal-proyecto">
+
+    <div class="contenido-modal">
+
+        <button id="cerrar-modal" class="cerrar-modal">
+            ×
+        </button>
+
+        <h2 id="titulo-modal">
+            Proyecto
+        </h2>
+
+        <p id="ubicacion-modal"></p>
+
+        <p id="descripcion-modal"></p>
+
+    </div>
+
+</div>
+<!-- CTA DEL PIE DE PÁGINA -->
+
+<section class="cta-footer">
+
+    <div class="cta-contenido">
+
+        <div class="cta-texto">
+
+            <div class="cta-icono">
+                🪖
+            </div>
+
+            <div>
+                <h2
+    data-es="¿Tienes un proyecto en mente?"
+    data-en="Do you have a project in mind?">
+    ¿Tienes un proyecto en mente?
+</h2>
+
+<p
+    data-es="Te acompañamos desde la idea hasta la entrega de tu proyecto."
+    data-en="We support you from the initial idea to the completion of your project.">
+    Te acompañamos desde la idea hasta la entrega
+    de tu proyecto.
+</p>
+            </div>
+
+        </div>
+
+       <a
+    href="contacto.html"
+    class="cta-boton"
+    data-es="Contáctanos →"
+    data-en="Contact us →">
+    Contáctanos →
+      </a>
+
+        <div class="cta-caracteristicas">
+
+            <div class="cta-caracteristica">
+                <span>🛡️</span>
+                <p
+    data-es="Calidad garantizada"
+    data-en="Guaranteed quality">
+    Calidad garantizada
+     </p>
+            </div>
+
+            <div class="cta-caracteristica">
+                <span>⏱️</span>
+                <p
+    data-es="Cumplimiento de plazos"
+    data-en="On-time delivery">
+    Cumplimiento de plazos
+</p>
+            </div>
+
+            <div class="cta-caracteristica">
+                <span>👥</span>
+                <p
+    data-es="Equipo especializado"
+    data-en="Specialized team">
+    Equipo especializado
+</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

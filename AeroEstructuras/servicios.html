@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AeroEstructuras | Servicios</title>
+
+   <link rel="stylesheet" href="css/general.css">
+   <link rel="stylesheet" href="css/servicios.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- ENCABEZADO -->
+<header class="encabezado">
+
+    <div class="logo">
+        <img src="img/logo-aeroestructuras.png" alt="Logo AeroEstructuras">
+    </div>
+
+    <nav class="menu">
+
+        <a href="index.html"
+           data-es="Inicio"
+           data-en="Home">
+            Inicio
+        </a>
+
+        <a href="nosotros.html"
+           data-es="Nosotros"
+           data-en="About Us">
+            Nosotros
+        </a>
+
+        <a href="servicios.html"
+           data-es="Servicios"
+           data-en="Services">
+            Servicios
+        </a>
+
+        <a href="proyectos.html"
+           data-es="Proyectos"
+           data-en="Projects">
+            Proyectos
+        </a>
+
+        <!-- SELECTOR DE IDIOMA -->
+
+        <div class="selector-idioma">
+
+            <button class="boton-idioma" id="botonIdioma">
+                🌐
+            </button>
+
+            <div class="menu-idioma" id="menuIdioma">
+
+                <button onclick="cambiarIdioma('es')">
+                    🇪🇸 Español
+                </button>
+
+                <button onclick="cambiarIdioma('en')">
+                    🇺🇸 English
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- BUSCADOR -->
+
+        <div class="contenedor-busqueda">
+
+            <button class="icono-menu" id="botonBuscar">
+                🔍
+            </button>
+
+            <div class="buscador" id="buscador">
+
+                <input
+                    type="text"
+                    id="campoBuscar"
+                    placeholder="Buscar..."
+                >
+
+                <button id="btnBuscar">
+                    Buscar
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- COTIZACIÓN -->
+
+        <a href="contacto.html"
+           class="boton-contactanos"
+           data-es="Solicita una cotización"
+           data-en="Request a Quote">
+            Solicita una cotización
+        </a>
+
+    </nav>
+
+</header>
+
+
+  <!-- PISO 2 - PRESENTACIÓN DE SERVICIOS -->
+
+<section class="servicios-hero">
+    <div class="contenido-servicios-hero">
+
+        <h1
+            data-es="SERVICIOS"
+            data-en="SERVICES">
+            SERVICIOS
+        </h1>
+
+        <p
+            data-es="En AeroEstructuras ofrecemos soluciones integrales de construcción, diseño y planificación, adaptadas a las necesidades de cada cliente. Desarrollamos proyectos seguros, funcionales, modernos y de calidad."
+            data-en="At AeroEstructuras, we offer comprehensive construction, design, and planning solutions adapted to each client's needs. We develop safe, functional, modern, and high-quality projects.">
+            En AeroEstructuras ofrecemos soluciones integrales de
+            construcción, diseño y planificación, adaptadas a las
+            necesidades de cada cliente. Desarrollamos proyectos
+            seguros, funcionales, modernos y de calidad.
+        </p>
+
+    </div>
+</section>
+<!-- PISO 3 - NUESTROS SERVICIOS -->
+
+<section class="nuestros-servicios">
+
+    <div class="titulo-seccion">
+
+        <h2 data-es="Nuestros Servicios" data-en="Our Services">
+        Nuestros Servicios
+        </h2>
+       <p
+       data-es="Ofrecemos soluciones especializadas para desarrollar proyectos modernos, seguros y adaptados a cada necesidad."
+       data-en="We offer specialized solutions to develop modern, safe, and customized projects for every need.">
+       Ofrecemos soluciones especializadas para desarrollar
+       proyectos modernos, seguros y adaptados a cada necesidad.
+       </p>
+      </div>
+    <div class="contenedor-servicios">
+
+
+        <!-- SERVICIO 1 -->
+
+        <div class="servicio-item">
+
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80"
+                 alt="Diseño y planificación">
+
+            <div class="contenido-servicio">
+
+                <<h3
+        data-es="Diseño y Planificación"
+        data-en="Design and Planning">
+        Diseño y Planificación
+        </h3>
+         <p
+       data-es="Diseñamos y planificamos cada proyecto considerando las necesidades, características y objetivos del cliente."
+        data-en="We design and plan each project considering the client's needs, characteristics, and objectives.">
+       Diseñamos y planificamos cada proyecto considerando
+       las necesidades, características y objetivos del cliente.
+       </p>
+            </div>
+        </div>
+
+        <!-- SERVICIO 2 -->
+
+        <div class="servicio-item">
+
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=700&q=80"
+                 alt="Construcción de obras">
+
+            <div class="contenido-servicio">
+
+                <h3
+         data-es="Construcción de Obras"
+          data-en="Construction Works">
+          Construcción de Obras
+       </h3>
+       <p
+        data-es="Ejecutamos proyectos de construcción garantizando calidad, seguridad y cumplimiento de los objetivos."
+        data-en="We execute construction projects while ensuring quality, safety, and compliance with the established objectives.">
+        Ejecutamos proyectos de construcción garantizando
+        calidad, seguridad y cumplimiento de los objetivos.
+          </p>
+
+            </div>
+
+        </div>
+        <!-- SERVICIO 3 -->
+
+        <div class="servicio-item">
+
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=700&q=80"
+                 alt="Remodelaciones y ampliaciones">
+
+            <div class="contenido-servicio">
+                <h3
+             data-es="Remodelaciones y Ampliaciones"
+               data-en="Remodeling and Extensions">
+              Remodelaciones y Ampliaciones
+              </h3>
+             <p
+            data-es="Transformamos y mejoramos espacios existentes mediante soluciones funcionales y modernas."
+             data-en="We transform and improve existing spaces through functional and modern solutions.">
+             Transformamos y mejoramos espacios existentes
+             mediante soluciones funcionales y modernas.
+               </p>
+            </div>
+        </div>
+        <!-- SERVICIO 4 -->
+
+        <div class="servicio-item">
+
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80"
+                 alt="Gerencia de proyectos">
+
+            <div class="contenido-servicio">
+
+                <h3
+              data-es="Gerencia de Proyectos"
+               data-en="Project Management">
+                 Gerencia de Proyectos
+               </h3>
+        <p
+    data-es="Coordinamos y supervisamos cada etapa del proyecto para asegurar una correcta ejecución."
+    data-en="We coordinate and supervise each stage of the project to ensure proper execution.">
+    Coordinamos y supervisamos cada etapa del proyecto
+    para asegurar una correcta ejecución.
+          </p>
+            </div>
+        </div>
+        <!-- SERVICIO 5 -->
+
+        <div class="servicio-item">
+
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
+                 alt="Construcción residencial">
+
+            <div class="contenido-servicio">
+
+                <h3
+    data-es="Construcción Residencial"
+    data-en="Residential Construction">
+    Construcción Residencial
+</h3>
+           <p
+        data-es="Construimos viviendas pensadas para brindar comodidad, seguridad y funcionalidad."
+       data-en="We build homes designed to provide comfort, safety, and functionality.">
+       Construimos viviendas pensadas para brindar
+        comodidad, seguridad y funcionalidad.
+          </p>
+            </div>
+        </div>
+        <!-- SERVICIO 6 -->
+        <div class="servicio-item">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=80"
+                 alt="Construcción comercial">
+            <div class="contenido-servicio">
+                <h3
+              data-es="Construcción Comercial"
+              data-en="Commercial Construction">
+              Construcción Comercial
+             </h3>
+              <p
+               data-es="Desarrollamos espacios comerciales modernos, funcionales y adaptados a cada negocio."
+              data-en="We develop modern, functional commercial spaces adapted to each business.">
+             Desarrollamos espacios comerciales modernos,
+              funcionales y adaptados a cada negocio.
+             </p>
+            </div>
+        </div>
+
+        <!-- SERVICIO 7 -->
+
+        <div class="servicio-item">
+
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=80"
+                 alt="Obras civiles">
+
+            <div class="contenido-servicio">
+
+                <h3
+           data-es="Obras Civiles e Infraestructura"
+           data-en="Civil Works and Infrastructure">
+          Obras Civiles e Infraestructura
+            </h3>
+      <p
+    data-es="Desarrollamos obras e infraestructura orientadas a satisfacer diferentes necesidades de construcción."
+    data-en="We develop civil works and infrastructure designed to meet different construction needs.">
+    Desarrollamos obras e infraestructura orientadas
+    a satisfacer diferentes necesidades de construcción.
+    </p>
+            </div>
+        </div>
+
+        <!-- SERVICIO 8 -->
+
+        <div class="servicio-item">
+
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80"
+                 alt="Construcción sostenible">
+
+            <div class="contenido-servicio">
+
+                <h3
+                data-es="Construcción Sostenible"
+                data-en="Sustainable Construction">
+                Construcción Sostenible
+                 </h3>
+           <p
+    data-es="Incorporamos soluciones que buscan reducir el impacto ambiental y aprovechar mejor los recursos."
+    data-en="We incorporate solutions that seek to reduce environmental impact and make better use of resources.">
+    Incorporamos soluciones que buscan reducir el impacto
+    ambiental y aprovechar mejor los recursos.
+             </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PISO 4 - NUESTRO PROCESO DE TRABAJO -->
+
+<section class="proceso-trabajo">
+
+    <div class="titulo-seccion">
+
+        <h2
+      data-es="Nuestro Proceso de Trabajo"
+      data-en="Our Work Process">
+      Nuestro Proceso de Trabajo
+           </h2>
+    <p
+     data-es="Trabajamos de manera organizada para garantizar que cada proyecto avance de forma segura, eficiente y de acuerdo con las necesidades de nuestros clientes."
+    data-en="We work in an organized manner to ensure that each project progresses safely, efficiently, and according to our clients' needs.">
+    Trabajamos de manera organizada para garantizar que cada
+    proyecto avance de forma segura, eficiente y de acuerdo
+    con las necesidades de nuestros clientes.
+    </p>
+    </div>
+    <div class="contenedor-proceso">
+
+
+        <!-- PASO 1 -->
+
+        <div class="paso-proceso">
+
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80"
+                 alt="Consulta">
+
+            <h3
+         data-es="Consulta"
+         data-en="Consultation">
+      Consulta
+        </h3>
+        <p
+     data-es="Escuchamos las necesidades del cliente y conocemos los objetivos principales del proyecto."
+     data-en="We listen to the client's needs and learn about the main objectives of the project.">
+     Escuchamos las necesidades del cliente y conocemos
+     los objetivos principales del proyecto.
+            </p>
+        </div>
+
+        <!-- PASO 2 -->
+
+        <div class="paso-proceso">
+
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80"
+                 alt="Planificación">
+
+            <h3
+       data-es="Planificación"
+      data-en="Planning">
+        Planificación
+            </h3>
+       <p
+    data-es="Organizamos las actividades, recursos y tiempos necesarios para desarrollar el proyecto."
+    data-en="We organize the activities, resources, and time required to develop the project.">
+    Organizamos las actividades, recursos y tiempos
+    necesarios para desarrollar el proyecto.
+       </p>
+        </div>
+        <!-- PASO 3 -->
+
+        <div class="paso-proceso">
+
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=80"
+                 alt="Ejecución">
+
+            <h3
+        data-es="Ejecución"
+        data-en="Execution">
+        Ejecución
+             </h3>
+    <p
+    data-es="Llevamos a cabo el proyecto aplicando los criterios establecidos durante la planificación."
+    data-en="We carry out the project by applying the criteria established during the planning stage.">
+    Llevamos a cabo el proyecto aplicando los criterios
+    establecidos durante la planificación.
+    </p>
+
+        </div>
+        <!-- PASO 4 -->
+
+        <div class="paso-proceso">
+
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80"
+                 alt="Supervisión">
+
+            <h3
+             data-es="Supervisión"
+      data-en="Supervision">
+        Supervisión
+          </h3>
+       <p
+    data-es="Supervisamos el avance de los trabajos para verificar la calidad y el cumplimiento de lo planificado."
+    data-en="We monitor the progress of the work to verify quality and compliance with the plan.">
+    Supervisamos el avance de los trabajos para verificar
+    la calidad y el cumplimiento de lo planificado.
+      </p>
+        </div>
+
+
+        <!-- PASO 5 -->
+
+        <div class="paso-proceso">
+
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=700&q=80"
+                 alt="Entrega">
+
+            <h3
+              data-es="Entrega"
+          data-en="Delivery">
+            Entrega
+              </h3>
+           <p
+      data-es="Finalizamos el proyecto y realizamos la entrega correspondiente al cliente."
+      data-en="We complete the project and carry out the corresponding delivery to the client.">
+      Finalizamos el proyecto y realizamos la entrega
+      correspondiente al cliente.
+            </p>
+        </div>
+      </div>
+     </section>
+
+<!-- PIE DE PÁGINA -->
+
+<footer class="pie-pagina">
+
+    <div class="columna-footer">
+        <h3 data-es="Te ayudamos" data-en="We help you">
+            Te ayudamos
+        </h3>
+
+        <a href="contacto.html"
+           data-es="Contáctanos"
+           data-en="Contact us">
+            Contáctanos
+        </a>
+
+        <a href="contacto.html"
+           data-es="Centro de ayuda"
+           data-en="Help Center">
+            Centro de ayuda
+        </a>
+
+        <a href="contacto.html"
+           data-es="Servicio al cliente"
+           data-en="Customer Service">
+            Servicio al cliente
+        </a>
+
+        <a href="contacto.html"
+           data-es="Preguntas frecuentes"
+           data-en="Frequently Asked Questions">
+            Preguntas frecuentes
+        </a>
+    </div>
+
+
+    <div class="columna-footer">
+        <h3 data-es="Nuestra empresa" data-en="Our Company">
+            Nuestra empresa
+        </h3>
+
+        <a href="nosotros.html"
+           data-es="Nosotros"
+           data-en="About Us">
+            Nosotros
+        </a>
+
+        <a href="nosotros.html"
+           data-es="Nuestra historia"
+           data-en="Our History">
+            Nuestra historia
+        </a>
+
+        <a href="servicios.html"
+           data-es="Servicios"
+           data-en="Services">
+            Servicios
+        </a>
+
+        <a href="proyectos.html"
+           data-es="Proyectos"
+           data-en="Projects">
+            Proyectos
+        </a>
+    </div>
+
+
+    <div class="columna-footer">
+        <h3 data-es="Nuestros canales" data-en="Our Channels">
+            Nuestros canales
+        </h3>
+
+        <div class="redes-sociales">
+
+            <a href="#" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="#" title="Correo electrónico">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+    </div>
+
+
+    <div class="columna-footer">
+        <h3 data-es="Contacto" data-en="Contact">
+            Contacto
+        </h3>
+
+        <p data-es="📍 Lima, Perú" data-en="📍 Lima, Peru">
+            📍 Lima, Perú
+        </p>
+
+        <p data-es="📞 +51 999 999 999" data-en="📞 +51 999 999 999">
+            📞 +51 999 999 999
+        </p>
+
+        <p data-es="✉️ contacto@aeroestructuras.com"
+           data-en="✉️ contacto@aeroestructuras.com">
+            ✉️ contacto@aeroestructuras.com
+        </p>
+    </div>
+
+</footer>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

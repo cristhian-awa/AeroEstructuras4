@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AeroEstructuras | Construcción y Diseño</title>
+
+   
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+          <div class="logo">
+          <img src="img/logo-aeroestructuras.png" alt="Logo AeroEstructuras">
+          </div>
+
+       <nav class="menu">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a>
+      <a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a>
+      <a href="proyectos.html" data-es="Proyectos" data-en="Projects">Proyectos</a>
+
+      <div class="selector-idioma">
+    <button class="boton-idioma" id="botonIdioma">🌐</button>
+
+    <div class="menu-idioma" id="menuIdioma">
+        <button onclick="cambiarIdioma('es')">🇪🇸 Español</button>
+        <button onclick="cambiarIdioma('en')">🇺🇸 English</button>
+    </div>
+</div>
+      <div class="contenedor-busqueda">
+
+    <button class="icono-menu" id="botonBuscar">
+        🔍
+    </button>
+
+    <div class="buscador" id="buscador">
+
+        <input
+            type="text"
+            id="campoBuscar"
+            placeholder="Buscar..."
+        >
+        <button id="btnBuscar">
+            Buscar
+        </button>
+    </div>
+</div>
+      <a href="contacto.html"
+   class="boton-contactanos"
+   data-es="Solicita una cotización"
+   data-en="Request a Quote">
+    Solicita una cotización
+</a>
+</nav>
+</header>
+
+
+    <!-- SECCIÓN PRINCIPAL -->
+       <section id="inicio" class="inicio">
+          <div class="contenido-inicio">
+    <h1>
+    <span data-es="Hacemos realidad" data-en="We make">
+        Hacemos realidad
+    </span>
+    <span data-es="tus sueños" data-en="your dreams">
+        tus sueños
+    </span>
+</h1>
+
+    <p
+     data-es="Somos una empresa constructora comprometida con la calidad, la seguridad y la satisfacción de nuestros clientes."
+     data-en="We are a construction company committed to quality, safety and customer satisfaction.">
+     Somos una empresa constructora comprometida con la calidad,
+    la seguridad y la satisfacción de nuestros clientes.
+     </p>
+
+     <div class="botones-inicio">
+        <a href="proyectos.html"
+    class="boton"
+    data-es="Nuestros proyectos"
+    data-en="Our projects">
+     Nuestros proyectos
+      </a>
+
+   <a href="nosotros.html"
+    class="boton boton-secundario"
+    data-es="Conoce más"
+    data-en="Learn more">
+     Conoce más
+</a>
+    </div>
+</div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="beneficios">
+
+    <div class="beneficio">
+        <div class="icono-beneficio">✓</div>
+        <div>
+            <h3 data-es="Calidad garantizada" data-en="Guaranteed quality">
+                Calidad garantizada
+            </h3>
+
+            <p data-es="Trabajamos con altos estándares de calidad."
+               data-en="We work with high quality standards.">
+                Trabajamos con altos estándares de calidad.
+            </p>
+        </div>
+    </div>
+
+    <div class="beneficio">
+        <div class="icono-beneficio">👷</div>
+        <div>
+            <h3 data-es="Equipo profesional" data-en="Professional team">
+                Equipo profesional
+            </h3>
+
+            <p data-es="Contamos con personal comprometido y capacitado."
+               data-en="We have committed and trained staff.">
+                Contamos con personal comprometido y capacitado.
+            </p>
+        </div>
+    </div>
+
+    <div class="beneficio">
+        <div class="icono-beneficio">⏱</div>
+        <div>
+            <h3 data-es="Cumplimiento de plazos" data-en="Meeting deadlines">
+                Cumplimiento de plazos
+            </h3>
+
+            <p data-es="Planificamos cada proyecto para cumplir los tiempos."
+               data-en="We plan each project to meet deadlines.">
+                Planificamos cada proyecto para cumplir los tiempos.
+            </p>
+        </div>
+    </div>
+
+    <div class="beneficio">
+        <div class="icono-beneficio">🌱</div>
+        <div>
+            <h3 data-es="Compromiso con el entorno"
+                data-en="Commitment to the environment">
+                Compromiso con el entorno
+            </h3>
+
+            <p data-es="Buscamos soluciones responsables y sostenibles."
+               data-en="We seek responsible and sustainable solutions.">
+                Buscamos soluciones responsables y sostenibles.
+            </p>
+        </div>
+    </div>
+
+</section>
+<!-- PROYECTOS DESTACADOS -->
+<section class="proyectos-destacados">
+
+     <div class="titulo-seccion">
+
+     <h2 data-es="Proyectos destacados"
+        data-en="Featured projects">
+        Proyectos destacados
+     </h2>
+
+     <p data-es="Conoce algunos de los proyectos desarrollados por AeroEstructuras."
+       data-en="Discover some of the projects developed by AeroEstructuras.">
+        Conoce algunos de los proyectos desarrollados
+        por AeroEstructuras.
+     </p>
+
+      </div>
+
+    <div class="contenedor-proyectos">
+
+        <div class="proyecto">
+
+            <img src="img/Edificio Corporativo.png"
+                alt="Proyecto de edificio moderno">
+
+            <div class="contenido-proyecto">
+
+                <h3 data-es="Edificio Corporativo"
+             data-en="Corporate Building">
+              Edificio Corporativo
+              </h3>
+
+          <p data-es="Diseño y construcción de espacios modernos para empresas."
+          data-en="Design and construction of modern spaces for companies.">
+          Diseño y construcción de espacios modernos
+          para empresas.
+         </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="proyecto">
+
+            <img src="img/proyecto residencial.png"
+                alt="Proyecto residencial">
+
+            <div class="contenido-proyecto">
+
+                <h3 data-es="Proyecto Residencial"
+                 data-en="Residential Project">
+                  Proyecto Residencial
+                 </h3>
+
+             <p data-es="Espacios residenciales diseñados para brindar comodidad y seguridad."
+               data-en="Residential spaces designed to provide comfort and safety.">
+                Espacios residenciales diseñados para brindar
+                 comodidad y seguridad.
+              </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="proyecto">
+
+            <img src="img/Nuestros inicios.png"
+                alt="Proyecto de construcción">
+
+            <div class="contenido-proyecto">
+
+                <h3 data-es="Obra Moderna"
+                data-en="Modern Construction">
+              Obra Moderna
+              </h3>
+
+             <p data-es="Soluciones constructivas funcionales, modernas y sostenibles."
+             data-en="Functional, modern and sustainable construction solutions.">
+              Soluciones constructivas funcionales,
+              modernas y sostenibles.
+             </p>
+            </div>
+
+        </div>
+
+        <div class="proyecto">
+    <img src="img/Centro Empresarial Conecta.png"
+        alt="Proyecto residencial moderno">
+
+    <div class="contenido-proyecto">
+        <h3 data-es="Residencial Moderna"
+        data-en="Modern Residence">
+         Residencial Moderna
+        </h3>
+
+     <p data-es="Diseño de espacios modernos, cómodos y funcionales."
+      data-en="Design of modern, comfortable and functional spaces.">
+     Diseño de espacios modernos,
+      cómodos y funcionales.
+    </p>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="boton-proyectos">
+
+        <a href="proyectos.html"
+         class="boton"
+        data-es="Ver más"
+        data-en="See more">
+        Ver más
+        </a>
+
+    </div>
+
+
+   </section>
+   
+   <!-- PIE DE PÁGINA -->
+
+<footer class="pie-pagina">
+
+    <div class="columna-footer">
+        <h3 data-es="Te ayudamos" data-en="We help you">
+            Te ayudamos
+        </h3>
+
+        <a href="contacto.html"
+           data-es="Contáctanos"
+           data-en="Contact us">
+            Contáctanos
+        </a>
+
+        <a href="contacto.html"
+           data-es="Centro de ayuda"
+           data-en="Help Center">
+            Centro de ayuda
+        </a>
+
+        <a href="contacto.html"
+           data-es="Servicio al cliente"
+           data-en="Customer Service">
+            Servicio al cliente
+        </a>
+
+        <a href="contacto.html"
+           data-es="Preguntas frecuentes"
+           data-en="Frequently Asked Questions">
+            Preguntas frecuentes
+        </a>
+    </div>
+
+
+    <div class="columna-footer">
+        <h3 data-es="Nuestra empresa" data-en="Our Company">
+            Nuestra empresa
+        </h3>
+
+        <a href="nosotros.html"
+           data-es="Nosotros"
+           data-en="About Us">
+            Nosotros
+        </a>
+
+        <a href="nosotros.html"
+           data-es="Nuestra historia"
+           data-en="Our History">
+            Nuestra historia
+        </a>
+
+        <a href="servicios.html"
+           data-es="Servicios"
+           data-en="Services">
+            Servicios
+        </a>
+
+        <a href="proyectos.html"
+           data-es="Proyectos"
+           data-en="Projects">
+            Proyectos
+        </a>
+    </div>
+
+
+    <div class="columna-footer">
+        <h3 data-es="Nuestros canales" data-en="Our Channels">
+            Nuestros canales
+        </h3>
+
+        <div class="redes-sociales">
+
+            <a href="#" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="#" title="Correo electrónico">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+    </div>
+
+
+    <div class="columna-footer">
+        <h3 data-es="Contacto" data-en="Contact">
+            Contacto
+        </h3>
+
+        <p data-es="📍 Lima, Perú" data-en="📍 Lima, Peru">
+            📍 Lima, Perú
+        </p>
+
+        <p data-es="📞 +51 999 999 999" data-en="📞 +51 999 999 999">
+            📞 +51 999 999 999
+        </p>
+
+        <p data-es="✉️ contacto@aeroestructuras.com"
+           data-en="✉️ contacto@aeroestructuras.com">
+            ✉️ contacto@aeroestructuras.com
+        </p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
